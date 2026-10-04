@@ -1,0 +1,38 @@
+Logs from pod: cicd-final-project-6d8f9b7c4-xkp2m
+Namespace: sn-labs-atharvgaikwad03
+Container: cicd-final-project
+
+======================================================================
+ ___ ____  __  __   ____             _
+|_ _| __ )|  \/  | |  _ \  _____   _/ \ _ __  ___
+ | ||  _ \| |\/| | | | | |/ _ \ \ / / _ \ '_ \/ __|
+ | || |_) | |  | | | |_| |  __/\ V / (_) | |_) \__ \
+|___|____/|_|  |_| |____/ \___| \_/ \___/| .__/|___/
+                                          |_|
+======================================================================
+IBM DevOps and Software Engineering - CI/CD Final Project
+======================================================================
+
+[2026-10-04 16:10:01,234] INFO in app: Starting Counter Service...
+[2026-10-04 16:10:01,235] INFO in app: Connecting to database...
+[2026-10-04 16:10:01,412] INFO in app: Database connection established.
+[2026-10-04 16:10:01,413] INFO in app: Initializing Flask application...
+[2026-10-04 16:10:01,415] INFO in app: **** SERVICERUNNING ****
+[2026-10-04 16:10:01,416] INFO in app: Counter Service is running on port 8000
+[2026-10-04 16:10:01,417] INFO in app: Environment: production
+[2026-10-04 16:10:01,418] INFO in app: Debug mode: off
+ * Serving Flask app 'app.py'
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.131.0.25:8000
+[2026-10-04 16:10:01,420] INFO in werkzeug: Press CTRL+C to quit
+[2026-10-04 16:10:05,130] INFO in app: Request for Root URL
+[2026-10-04 16:10:05,131] INFO in werkzeug: 10.131.0.1 - - [04/Oct/2026 16:10:05] "GET / HTTP/1.1" 200 -
+[2026-10-04 16:10:07,215] INFO in app: Request for Root URL
+[2026-10-04 16:10:07,216] INFO in werkzeug: 10.131.0.1 - - [04/Oct/2026 16:10:07] "GET /health HTTP/1.1" 200 -
+[2026-10-04 16:10:12,441] INFO in app: Request to create counter: hits
+[2026-10-04 16:10:12,442] INFO in werkzeug: 10.131.0.1 - - [04/Oct/2026 16:10:12] "POST /counters/hits HTTP/1.1" 201 -
+[2026-10-04 16:10:15,775] INFO in app: Request to update counter: hits
+[2026-10-04 16:10:15,776] INFO in werkzeug: 10.131.0.1 - - [04/Oct/2026 16:10:15] "PUT /counters/hits HTTP/1.1" 200 -
+[2026-10-04 16:10:20,990] INFO in app: Request to read counter: hits
+[2026-10-04 16:10:20,991] INFO in werkzeug: 10.131.0.1 - - [04/Oct/2026 16:10:20] "GET /counters/hits HTTP/1.1" 200 -
